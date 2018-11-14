@@ -10,6 +10,6 @@ import java.rmi.RemoteException;
 public interface Operaciones extends Remote {
 
   public byte[] cifrar(String cifrador, String llave, byte[] parteArchivo) throws RemoteException;
-  
+
   public String saluda() throws RemoteException;
 }

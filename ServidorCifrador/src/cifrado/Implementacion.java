@@ -23,4 +23,9 @@ public class Implementacion extends UnicastRemoteObject implements Operaciones {
     return uc.cifrado(llave, parteArchivo);
   }
 
+  @Override
+  public String saluda() throws RemoteException {
+    return "Hola. Todo ok";
+  }
+
 }
