@@ -17,33 +17,33 @@ import java.util.Scanner;
  */
 public class Servidor {
 
-  public static void main(String[] args) {
-    System.out.println("Dirección IP de este servidor: ");
-    String myIP = new Scanner(System.in).nextLine();
-    
-    System.setProperty("java.rmi.server.hostname", myIP);
+    public static void main(String[] args) {
+        System.out.println("Dirección IP de este servidor: ");
+        String myIP = new Scanner(System.in).nextLine();
 
-    try {
-      Operaciones ope;
+        System.setProperty("java.rmi.server.hostname", myIP);
 
-      /* Se crea un registro en el puerto establecido */
-      LocateRegistry.createRegistry(1099);
+        try {
+            Operaciones ope;
 
-      /* Registrar el elemento en el servicio de nombres */
+            /* Se crea un registro en el puerto establecido */
+            LocateRegistry.createRegistry(1099);
+
+            /* Registrar el elemento en el servicio de nombres */
  /* Debe de apuntar a la implementacion */
-      ope = new Implementacion();
+            ope = new Implementacion();
 
-      /* bind("nombre", quien conoce las operaciones) */
-      Naming.bind("cifrado", ope);
+            /* bind("nombre", quien conoce las operaciones) */
+            Naming.bind("cifrado", ope);
 
-      System.out.println("Servidor funcionando!");
-    } catch (RemoteException ex) {
-      Logger.getLogger(Servidor.class.getName()).log(Level.SEVERE, null, ex);
-    } catch (AlreadyBoundException ex) {
-      Logger.getLogger(Servidor.class.getName()).log(Level.SEVERE, null, ex);
-    } catch (MalformedURLException ex) {
-      Logger.getLogger(Servidor.class.getName()).log(Level.SEVERE, null, ex);
+            System.out.println("Servidor funcionando!");
+        } catch (RemoteException ex) {
+            Logger.getLogger(Servidor.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (AlreadyBoundException ex) {
+            Logger.getLogger(Servidor.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (MalformedURLException ex) {
+            Logger.getLogger(Servidor.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
-  }
 
 }

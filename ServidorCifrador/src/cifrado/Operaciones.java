@@ -9,7 +9,9 @@ import java.rmi.RemoteException;
  */
 public interface Operaciones extends Remote {
 
-  public byte[] cifrar(String cifrador, String llave, byte[] parteArchivo) throws RemoteException;
-  
-  public String saluda() throws RemoteException;
+    public byte[] cifrar(String cifrador, String llave, byte[] parteArchivo) throws RemoteException;
+    
+    public byte[] descifrar(String cifrador, String llave, byte[] parteArchivo) throws RemoteException;
+
+    public String saluda() throws RemoteException;
 }

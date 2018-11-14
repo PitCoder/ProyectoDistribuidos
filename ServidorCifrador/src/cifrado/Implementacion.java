@@ -10,22 +10,31 @@ import javax.crypto.Cipher;
  */
 public class Implementacion extends UnicastRemoteObject implements Operaciones {
 
-  public Implementacion() throws RemoteException {
-    super();
-  }
+    public Implementacion() throws RemoteException {
+        super();
+    }
 
-  @Override
-  public byte[] cifrar(String cifrador, String llave, byte[] parteArchivo) throws RemoteException {
-    UtileriasCifrado uc = new UtileriasCifrado();
-    uc.setCifrado(cifrador);
-    uc.setModoCifrado(Cipher.ENCRYPT_MODE);
+    @Override
+    public byte[] cifrar(String cifrador, String llave, byte[] parteArchivo) throws RemoteException {
+        UtileriasCifrado uc = new UtileriasCifrado();
+        uc.setCifrado(cifrador);
+        uc.setModoCifrado(Cipher.ENCRYPT_MODE);
+
+        return uc.cifrado(llave, parteArchivo);
+    }
     
-    return uc.cifrado(llave, parteArchivo);
-  }
+    @Override
+    public byte[] descifrar(String cifrador, String llave, byte[] parteArchivo) throws RemoteException {
+        UtileriasCifrado uc = new UtileriasCifrado();
+        uc.setCifrado(cifrador);
+        uc.setModoCifrado(Cipher.DECRYPT_MODE);
 
-  @Override
-  public String saluda() throws RemoteException {
-    return "Hola. Todo ok";
-  }
+        return uc.cifrado(llave, parteArchivo);
+    }
+
+    @Override
+    public String saluda() throws RemoteException {
+        return "Hola. Todo ok";
+    }
 
 }
