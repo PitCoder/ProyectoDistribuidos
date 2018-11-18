@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://Services/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="ServicioDeArchivo" targetNamespace="http://Services/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8090/ServicioArchivo/ServicioDeArchivo?xsd=1" namespace="http://Services/" />
+    </xsd:schema>
+  </types>
+  <message name="createFile">
+    <part name="parameters" element="tns:createFile" />
+  </message>
+  <message name="createFileResponse">
+    <part name="parameters" element="tns:createFileResponse" />
+  </message>
+  <message name="IOException">
+    <part name="fault" element="tns:IOException" />
+  </message>
+  <message name="getNumberOfChunks">
+    <part name="parameters" element="tns:getNumberOfChunks" />
+  </message>
+  <message name="getNumberOfChunksResponse">
+    <part name="parameters" element="tns:getNumberOfChunksResponse" />
+  </message>
+  <message name="getNChunk">
+    <part name="parameters" element="tns:getNChunk" />
+  </message>
+  <message name="getNChunkResponse">
+    <part name="parameters" element="tns:getNChunkResponse" />
+  </message>
+  <message name="getFileAsJFile">
+    <part name="parameters" element="tns:getFileAsJFile" />
+  </message>
+  <message name="getFileAsJFileResponse">
+    <part name="parameters" element="tns:getFileAsJFileResponse" />
+  </message>
+  <message name="hello">
+    <part name="parameters" element="tns:hello" />
+  </message>
+  <message name="helloResponse">
+    <part name="parameters" element="tns:helloResponse" />
+  </message>
+  <message name="sendBytes">
+    <part name="parameters" element="tns:sendBytes" />
+  </message>
+  <message name="sendBytesResponse">
+    <part name="parameters" element="tns:sendBytesResponse" />
+  </message>
+  <message name="getFileAsBytes">
+    <part name="parameters" element="tns:getFileAsBytes" />
+  </message>
+  <message name="getFileAsBytesResponse">
+    <part name="parameters" element="tns:getFileAsBytesResponse" />
+  </message>
+  <message name="getNameOfFile">
+    <part name="parameters" element="tns:getNameOfFile" />
+  </message>
+  <message name="getNameOfFileResponse">
+    <part name="parameters" element="tns:getNameOfFileResponse" />
+  </message>
+  <portType name="ServicioDeArchivo">
+    <operation name="createFile">
+      <input wsam:Action="http://Services/ServicioDeArchivo/createFileRequest" message="tns:createFile" />
+      <output wsam:Action="http://Services/ServicioDeArchivo/createFileResponse" message="tns:createFileResponse" />
+      <fault wsam:Action="http://Services/ServicioDeArchivo/createFile/Fault/IOException" name="IOException" message="tns:IOException" />
+    </operation>
+    <operation name="getNumberOfChunks">
+      <input wsam:Action="http://Services/ServicioDeArchivo/getNumberOfChunksRequest" message="tns:getNumberOfChunks" />
+      <output wsam:Action="http://Services/ServicioDeArchivo/getNumberOfChunksResponse" message="tns:getNumberOfChunksResponse" />
+      <fault wsam:Action="http://Services/ServicioDeArchivo/getNumberOfChunks/Fault/IOException" name="IOException" message="tns:IOException" />
+    </operation>
+    <operation name="getNChunk">
+      <input wsam:Action="http://Services/ServicioDeArchivo/getNChunkRequest" message="tns:getNChunk" />
+      <output wsam:Action="http://Services/ServicioDeArchivo/getNChunkResponse" message="tns:getNChunkResponse" />
+      <fault wsam:Action="http://Services/ServicioDeArchivo/getNChunk/Fault/IOException" name="IOException" message="tns:IOException" />
+    </operation>
+    <operation name="getFileAsJFile">
+      <input wsam:Action="http://Services/ServicioDeArchivo/getFileAsJFileRequest" message="tns:getFileAsJFile" />
+      <output wsam:Action="http://Services/ServicioDeArchivo/getFileAsJFileResponse" message="tns:getFileAsJFileResponse" />
+    </operation>
+    <operation name="hello">
+      <input wsam:Action="http://Services/ServicioDeArchivo/helloRequest" message="tns:hello" />
+      <output wsam:Action="http://Services/ServicioDeArchivo/helloResponse" message="tns:helloResponse" />
+    </operation>
+    <operation name="sendBytes">
+      <input wsam:Action="http://Services/ServicioDeArchivo/sendBytesRequest" message="tns:sendBytes" />
+      <output wsam:Action="http://Services/ServicioDeArchivo/sendBytesResponse" message="tns:sendBytesResponse" />
+      <fault wsam:Action="http://Services/ServicioDeArchivo/sendBytes/Fault/IOException" name="IOException" message="tns:IOException" />
+    </operation>
+    <operation name="getFileAsBytes">
+      <input wsam:Action="http://Services/ServicioDeArchivo/getFileAsBytesRequest" message="tns:getFileAsBytes" />
+      <output wsam:Action="http://Services/ServicioDeArchivo/getFileAsBytesResponse" message="tns:getFileAsBytesResponse" />
+      <fault wsam:Action="http://Services/ServicioDeArchivo/getFileAsBytes/Fault/IOException" name="IOException" message="tns:IOException" />
+    </operation>
+    <operation name="getNameOfFile">
+      <input wsam:Action="http://Services/ServicioDeArchivo/getNameOfFileRequest" message="tns:getNameOfFile" />
+      <output wsam:Action="http://Services/ServicioDeArchivo/getNameOfFileResponse" message="tns:getNameOfFileResponse" />
+      <fault wsam:Action="http://Services/ServicioDeArchivo/getNameOfFile/Fault/IOException" name="IOException" message="tns:IOException" />
+    </operation>
+  </portType>
+  <binding name="ServicioDeArchivoPortBinding" type="tns:ServicioDeArchivo">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="createFile">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getNumberOfChunks">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getNChunk">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getFileAsJFile">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="hello">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="sendBytes">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getFileAsBytes">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getNameOfFile">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+    </operation>
+  </binding>
+  <service name="ServicioDeArchivo">
+    <port name="ServicioDeArchivoPort" binding="tns:ServicioDeArchivoPortBinding">
+      <soap:address location="http://localhost:8090/ServicioArchivo/ServicioDeArchivo" />
+    </port>
+  </service>
+</definitions>

@@ -1,0 +1,10 @@
+C:\Users\jonat\source\repos\ArchivoWebService\ArchivoWebService\bin\Debug\ArchivoWebService.exe.config
+C:\Users\jonat\source\repos\ArchivoWebService\ArchivoWebService\bin\Debug\ArchivoWebService.exe
+C:\Users\jonat\source\repos\ArchivoWebService\ArchivoWebService\bin\Debug\ArchivoWebService.pdb
+C:\Users\jonat\source\repos\ArchivoWebService\ArchivoWebService\obj\Debug\ArchivoWebService.csprojAssemblyReference.cache
+C:\Users\jonat\source\repos\ArchivoWebService\ArchivoWebService\obj\Debug\ArchivoWebService.Form1.resources
+C:\Users\jonat\source\repos\ArchivoWebService\ArchivoWebService\obj\Debug\ArchivoWebService.Properties.Resources.resources
+C:\Users\jonat\source\repos\ArchivoWebService\ArchivoWebService\obj\Debug\ArchivoWebService.csproj.GenerateResource.cache
+C:\Users\jonat\source\repos\ArchivoWebService\ArchivoWebService\obj\Debug\ArchivoWebService.csproj.CoreCompileInputs.cache
+C:\Users\jonat\source\repos\ArchivoWebService\ArchivoWebService\obj\Debug\ArchivoWebService.exe
+C:\Users\jonat\source\repos\ArchivoWebService\ArchivoWebService\obj\Debug\ArchivoWebService.pdb
