@@ -56,19 +56,19 @@ namespace ArchivoWebService
 				try
 				{
 
-					ServerUtils.enviaArchivoSeguro2("salida.mp4", archivo_a_cifrar, password);
-					ServerUtils.recibeArchivo("salida.mp4", url_archivo_guardar);
+					ServerUtils.CifraConWS(url_archivo_guardar, archivo_a_cifrar, password);
 					
 					//ServerUtils.recibeArchivoSeguro2("salida.mp4", "C:\\Users\\jonat\\OneDrive\\Escritorio\\mio.mp4", "iso.txt");
 					//CryptoUtils.Decrypt("C:\\Users\\jonat\\OneDrive\\Escritorio\\iso2.txt", "C:\\Users\\jonat\\OneDrive\\Escritorio\\iso24.txt", "iso.txt");
-					//progressBar1.Value = 50;
+					
 					MessageBox.Show("Se cifró y recibió el archivo en: "+url_archivo_guardar);
 				}
 				catch (IOException)
 				{
-					Console.WriteLine("paso un error");
+					Console.WriteLine("pasó un error");
 				}
-				
+				progressBar1.Value = 100;
+
 			}
 		}
 
@@ -132,8 +132,9 @@ namespace ArchivoWebService
 				try
 				{
 
-					ServerUtils.enviaArchivo("salida.mp4", archivo_a_cifrar);
-					ServerUtils.recibeArchivoSeguro2("salida.mp4", url_archivo_guardar, password);
+					ServerUtils.DescifraConWS(url_archivo_guardar, archivo_a_cifrar, password);
+
+					//ServerUtils.recibeArchivoSeguro2("salida.mp4", url_archivo_guardar, password);
 					
 					//ServerUtils.recibeArchivoSeguro2("salida.mp4", "C:\\Users\\jonat\\OneDrive\\Escritorio\\mio.mp4", "iso.txt");
 					//CryptoUtils.Decrypt("C:\\Users\\jonat\\OneDrive\\Escritorio\\iso2.txt", "C:\\Users\\jonat\\OneDrive\\Escritorio\\iso24.txt", "iso.txt");
@@ -144,7 +145,7 @@ namespace ArchivoWebService
 				{
 					Console.WriteLine("paso un error");
 				}
-
+				progressBar1.Value = 100;
 			}
 		}
 

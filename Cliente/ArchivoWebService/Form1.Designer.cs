@@ -30,7 +30,7 @@
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
 			this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-			this.btnCifrar = new System.Windows.Forms.Button();
+			this.btnCifrado = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
 			this.txtPassword = new System.Windows.Forms.TextBox();
 			this.button2 = new System.Windows.Forms.Button();
@@ -46,17 +46,17 @@
 			// 
 			this.openFileDialog1.FileName = "openFileDialog1";
 			// 
-			// btnCifrar
+			// btnCifrado
 			// 
-			this.btnCifrar.BackColor = System.Drawing.Color.Khaki;
-			this.btnCifrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-			this.btnCifrar.Location = new System.Drawing.Point(180, 105);
-			this.btnCifrar.Name = "btnCifrar";
-			this.btnCifrar.Size = new System.Drawing.Size(67, 46);
-			this.btnCifrar.TabIndex = 0;
-			this.btnCifrar.Text = "Cifrar (subir)";
-			this.btnCifrar.UseVisualStyleBackColor = false;
-			this.btnCifrar.Click += new System.EventHandler(this.button1_Click);
+			this.btnCifrado.BackColor = System.Drawing.Color.Khaki;
+			this.btnCifrado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+			this.btnCifrado.Location = new System.Drawing.Point(180, 105);
+			this.btnCifrado.Name = "btnCifrado";
+			this.btnCifrado.Size = new System.Drawing.Size(67, 46);
+			this.btnCifrado.TabIndex = 0;
+			this.btnCifrado.Text = "Cifrar (subir)";
+			this.btnCifrado.UseVisualStyleBackColor = false;
+			this.btnCifrado.Click += new System.EventHandler(this.button1_Click);
 			// 
 			// label1
 			// 
@@ -161,7 +161,7 @@
 			this.Controls.Add(this.button2);
 			this.Controls.Add(this.txtPassword);
 			this.Controls.Add(this.label1);
-			this.Controls.Add(this.btnCifrar);
+			this.Controls.Add(this.btnCifrado);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "Form1";
 			this.Text = "Archivos";
@@ -174,7 +174,7 @@
 		#endregion
 
 		private System.Windows.Forms.OpenFileDialog openFileDialog1;
-		private System.Windows.Forms.Button btnCifrar;
+		private System.Windows.Forms.Button btnCifrado;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.TextBox txtPassword;
 		private System.Windows.Forms.Button button2;

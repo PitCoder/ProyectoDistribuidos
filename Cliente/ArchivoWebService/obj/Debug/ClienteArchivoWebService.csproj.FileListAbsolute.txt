@@ -1,0 +1,10 @@
+C:\Users\jonat\Documents\gitDSDist\ProyectoDistribuidos\Cliente\ArchivoWebService\bin\Debug\ArchivoWebService.exe.config
+C:\Users\jonat\Documents\gitDSDist\ProyectoDistribuidos\Cliente\ArchivoWebService\bin\Debug\ArchivoWebService.exe
+C:\Users\jonat\Documents\gitDSDist\ProyectoDistribuidos\Cliente\ArchivoWebService\bin\Debug\ArchivoWebService.pdb
+C:\Users\jonat\Documents\gitDSDist\ProyectoDistribuidos\Cliente\ArchivoWebService\obj\Debug\ClienteArchivoWebService.csprojAssemblyReference.cache
+C:\Users\jonat\Documents\gitDSDist\ProyectoDistribuidos\Cliente\ArchivoWebService\obj\Debug\ArchivoWebService.Form1.resources
+C:\Users\jonat\Documents\gitDSDist\ProyectoDistribuidos\Cliente\ArchivoWebService\obj\Debug\ArchivoWebService.Properties.Resources.resources
+C:\Users\jonat\Documents\gitDSDist\ProyectoDistribuidos\Cliente\ArchivoWebService\obj\Debug\ClienteArchivoWebService.csproj.GenerateResource.cache
+C:\Users\jonat\Documents\gitDSDist\ProyectoDistribuidos\Cliente\ArchivoWebService\obj\Debug\ClienteArchivoWebService.csproj.CoreCompileInputs.cache
+C:\Users\jonat\Documents\gitDSDist\ProyectoDistribuidos\Cliente\ArchivoWebService\obj\Debug\ArchivoWebService.exe
+C:\Users\jonat\Documents\gitDSDist\ProyectoDistribuidos\Cliente\ArchivoWebService\obj\Debug\ArchivoWebService.pdb
