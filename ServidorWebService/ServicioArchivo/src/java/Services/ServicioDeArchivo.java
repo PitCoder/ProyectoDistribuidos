@@ -38,7 +38,7 @@ public class ServicioDeArchivo {
     @WebMethod(operationName = "cifrar")
     public byte[] cifrar(byte[] bytesToEncrypt) throws IOException {
         //TODO write your implementation code here:   
-        byte[] bytesCifrados=new byte[SIZE_OF_CHUNKS];
+        byte[] bytesCifrados=bytesToEncrypt;
         
 
         
@@ -53,7 +53,8 @@ public class ServicioDeArchivo {
     @WebMethod(operationName = "descifrar")
     public byte[] descifrar(byte[] bytesToDecrypt) throws IOException {
         //TODO write your implementation code here:   
-        byte[] bytesCifrados=new byte[SIZE_OF_CHUNKS];
+        byte[] bytesCifrados=bytesToDecrypt;
+        
         
 
         
