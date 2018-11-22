@@ -76,28 +76,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="Connected Services\ServicioArchivo\ArchivoWebService.ServicioArchivo.createFileResponse.datasource">
+    <None Include="Connected Services\ServicioArchivo\ArchivoWebService.ServicioArchivo.cifrarResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServicioArchivo\ArchivoWebService.ServicioArchivo.getFileAsBytesResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioArchivo\ArchivoWebService.ServicioArchivo.getFileAsJFileResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioArchivo\ArchivoWebService.ServicioArchivo.getNameOfFileResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioArchivo\ArchivoWebService.ServicioArchivo.getNChunkResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioArchivo\ArchivoWebService.ServicioArchivo.getNumberOfChunksResponse.datasource">
+    <None Include="Connected Services\ServicioArchivo\ArchivoWebService.ServicioArchivo.descifrarResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServicioArchivo\ArchivoWebService.ServicioArchivo.helloResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioArchivo\ArchivoWebService.ServicioArchivo.sendBytesResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServicioArchivo\ServicioDeArchivo.wsdl" />

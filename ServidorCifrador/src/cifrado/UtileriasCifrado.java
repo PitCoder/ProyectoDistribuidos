@@ -23,6 +23,7 @@ public class UtileriasCifrado {
       Key secretKey = new SecretKeySpec(llave.getBytes(), this.cifrado);
       Cipher cipher = Cipher.getInstance(this.cifrado);
       cipher.init(this.modoCifrado, secretKey);
+      
 
       return cipher.doFinal(datos);
     } catch (NoSuchPaddingException | NoSuchAlgorithmException

@@ -48,45 +48,6 @@ namespace ArchivoWebService.ServicioArchivo {
     public interface ServicioDeArchivo {
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://Services/ServicioDeArchivo/createFileRequest", ReplyAction="http://Services/ServicioDeArchivo/createFileResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ArchivoWebService.ServicioArchivo.IOException), Action="http://Services/ServicioDeArchivo/createFile/Fault/IOException", Name="IOException")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        ArchivoWebService.ServicioArchivo.createFileResponse createFile(ArchivoWebService.ServicioArchivo.createFileRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://Services/ServicioDeArchivo/createFileRequest", ReplyAction="http://Services/ServicioDeArchivo/createFileResponse")]
-        System.Threading.Tasks.Task<ArchivoWebService.ServicioArchivo.createFileResponse> createFileAsync(ArchivoWebService.ServicioArchivo.createFileRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://Services/ServicioDeArchivo/getNumberOfChunksRequest", ReplyAction="http://Services/ServicioDeArchivo/getNumberOfChunksResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ArchivoWebService.ServicioArchivo.IOException), Action="http://Services/ServicioDeArchivo/getNumberOfChunks/Fault/IOException", Name="IOException")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        ArchivoWebService.ServicioArchivo.getNumberOfChunksResponse getNumberOfChunks(ArchivoWebService.ServicioArchivo.getNumberOfChunksRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://Services/ServicioDeArchivo/getNumberOfChunksRequest", ReplyAction="http://Services/ServicioDeArchivo/getNumberOfChunksResponse")]
-        System.Threading.Tasks.Task<ArchivoWebService.ServicioArchivo.getNumberOfChunksResponse> getNumberOfChunksAsync(ArchivoWebService.ServicioArchivo.getNumberOfChunksRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://Services/ServicioDeArchivo/getNChunkRequest", ReplyAction="http://Services/ServicioDeArchivo/getNChunkResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ArchivoWebService.ServicioArchivo.IOException), Action="http://Services/ServicioDeArchivo/getNChunk/Fault/IOException", Name="IOException")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        ArchivoWebService.ServicioArchivo.getNChunkResponse getNChunk(ArchivoWebService.ServicioArchivo.getNChunkRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://Services/ServicioDeArchivo/getNChunkRequest", ReplyAction="http://Services/ServicioDeArchivo/getNChunkResponse")]
-        System.Threading.Tasks.Task<ArchivoWebService.ServicioArchivo.getNChunkResponse> getNChunkAsync(ArchivoWebService.ServicioArchivo.getNChunkRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://Services/ServicioDeArchivo/getFileAsJFileRequest", ReplyAction="http://Services/ServicioDeArchivo/getFileAsJFileResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        ArchivoWebService.ServicioArchivo.getFileAsJFileResponse getFileAsJFile(ArchivoWebService.ServicioArchivo.getFileAsJFileRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://Services/ServicioDeArchivo/getFileAsJFileRequest", ReplyAction="http://Services/ServicioDeArchivo/getFileAsJFileResponse")]
-        System.Threading.Tasks.Task<ArchivoWebService.ServicioArchivo.getFileAsJFileResponse> getFileAsJFileAsync(ArchivoWebService.ServicioArchivo.getFileAsJFileRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://Services/ServicioDeArchivo/helloRequest", ReplyAction="http://Services/ServicioDeArchivo/helloResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
@@ -96,175 +57,24 @@ namespace ArchivoWebService.ServicioArchivo {
         System.Threading.Tasks.Task<ArchivoWebService.ServicioArchivo.helloResponse> helloAsync(ArchivoWebService.ServicioArchivo.helloRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://Services/ServicioDeArchivo/sendBytesRequest", ReplyAction="http://Services/ServicioDeArchivo/sendBytesResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ArchivoWebService.ServicioArchivo.IOException), Action="http://Services/ServicioDeArchivo/sendBytes/Fault/IOException", Name="IOException")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://Services/ServicioDeArchivo/descifrarRequest", ReplyAction="http://Services/ServicioDeArchivo/descifrarResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ArchivoWebService.ServicioArchivo.IOException), Action="http://Services/ServicioDeArchivo/descifrar/Fault/IOException", Name="IOException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        ArchivoWebService.ServicioArchivo.sendBytesResponse sendBytes(ArchivoWebService.ServicioArchivo.sendBytesRequest request);
+        ArchivoWebService.ServicioArchivo.descifrarResponse descifrar(ArchivoWebService.ServicioArchivo.descifrarRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://Services/ServicioDeArchivo/sendBytesRequest", ReplyAction="http://Services/ServicioDeArchivo/sendBytesResponse")]
-        System.Threading.Tasks.Task<ArchivoWebService.ServicioArchivo.sendBytesResponse> sendBytesAsync(ArchivoWebService.ServicioArchivo.sendBytesRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://Services/ServicioDeArchivo/descifrarRequest", ReplyAction="http://Services/ServicioDeArchivo/descifrarResponse")]
+        System.Threading.Tasks.Task<ArchivoWebService.ServicioArchivo.descifrarResponse> descifrarAsync(ArchivoWebService.ServicioArchivo.descifrarRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://Services/ServicioDeArchivo/getFileAsBytesRequest", ReplyAction="http://Services/ServicioDeArchivo/getFileAsBytesResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ArchivoWebService.ServicioArchivo.IOException), Action="http://Services/ServicioDeArchivo/getFileAsBytes/Fault/IOException", Name="IOException")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://Services/ServicioDeArchivo/cifrarRequest", ReplyAction="http://Services/ServicioDeArchivo/cifrarResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ArchivoWebService.ServicioArchivo.IOException), Action="http://Services/ServicioDeArchivo/cifrar/Fault/IOException", Name="IOException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        ArchivoWebService.ServicioArchivo.getFileAsBytesResponse getFileAsBytes(ArchivoWebService.ServicioArchivo.getFileAsBytesRequest request);
+        ArchivoWebService.ServicioArchivo.cifrarResponse cifrar(ArchivoWebService.ServicioArchivo.cifrarRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://Services/ServicioDeArchivo/getFileAsBytesRequest", ReplyAction="http://Services/ServicioDeArchivo/getFileAsBytesResponse")]
-        System.Threading.Tasks.Task<ArchivoWebService.ServicioArchivo.getFileAsBytesResponse> getFileAsBytesAsync(ArchivoWebService.ServicioArchivo.getFileAsBytesRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://Services/ServicioDeArchivo/getNameOfFileRequest", ReplyAction="http://Services/ServicioDeArchivo/getNameOfFileResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ArchivoWebService.ServicioArchivo.IOException), Action="http://Services/ServicioDeArchivo/getNameOfFile/Fault/IOException", Name="IOException")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        ArchivoWebService.ServicioArchivo.getNameOfFileResponse getNameOfFile(ArchivoWebService.ServicioArchivo.getNameOfFileRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://Services/ServicioDeArchivo/getNameOfFileRequest", ReplyAction="http://Services/ServicioDeArchivo/getNameOfFileResponse")]
-        System.Threading.Tasks.Task<ArchivoWebService.ServicioArchivo.getNameOfFileResponse> getNameOfFileAsync(ArchivoWebService.ServicioArchivo.getNameOfFileRequest request);
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="createFile", WrapperNamespace="http://Services/", IsWrapped=true)]
-    public partial class createFileRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://Services/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string arg0;
-        
-        public createFileRequest() {
-        }
-        
-        public createFileRequest(string arg0) {
-            this.arg0 = arg0;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="createFileResponse", WrapperNamespace="http://Services/", IsWrapped=true)]
-    public partial class createFileResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://Services/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public createFileResponse() {
-        }
-        
-        public createFileResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getNumberOfChunks", WrapperNamespace="http://Services/", IsWrapped=true)]
-    public partial class getNumberOfChunksRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://Services/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string arg0;
-        
-        public getNumberOfChunksRequest() {
-        }
-        
-        public getNumberOfChunksRequest(string arg0) {
-            this.arg0 = arg0;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getNumberOfChunksResponse", WrapperNamespace="http://Services/", IsWrapped=true)]
-    public partial class getNumberOfChunksResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://Services/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public getNumberOfChunksResponse() {
-        }
-        
-        public getNumberOfChunksResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getNChunk", WrapperNamespace="http://Services/", IsWrapped=true)]
-    public partial class getNChunkRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://Services/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string arg0;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://Services/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public long arg1;
-        
-        public getNChunkRequest() {
-        }
-        
-        public getNChunkRequest(string arg0, long arg1) {
-            this.arg0 = arg0;
-            this.arg1 = arg1;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getNChunkResponse", WrapperNamespace="http://Services/", IsWrapped=true)]
-    public partial class getNChunkResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://Services/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="base64Binary", IsNullable=true)]
-        public byte[] @return;
-        
-        public getNChunkResponse() {
-        }
-        
-        public getNChunkResponse(byte[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getFileAsJFile", WrapperNamespace="http://Services/", IsWrapped=true)]
-    public partial class getFileAsJFileRequest {
-        
-        public getFileAsJFileRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getFileAsJFileResponse", WrapperNamespace="http://Services/", IsWrapped=true)]
-    public partial class getFileAsJFileResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://Services/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string @return;
-        
-        public getFileAsJFileResponse() {
-        }
-        
-        public getFileAsJFileResponse(string @return) {
-            this.@return = @return;
-        }
+        [System.ServiceModel.OperationContractAttribute(Action="http://Services/ServicioDeArchivo/cifrarRequest", ReplyAction="http://Services/ServicioDeArchivo/cifrarResponse")]
+        System.Threading.Tasks.Task<ArchivoWebService.ServicioArchivo.cifrarResponse> cifrarAsync(ArchivoWebService.ServicioArchivo.cifrarRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -306,58 +116,17 @@ namespace ArchivoWebService.ServicioArchivo {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="sendBytes", WrapperNamespace="http://Services/", IsWrapped=true)]
-    public partial class sendBytesRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="descifrar", WrapperNamespace="http://Services/", IsWrapped=true)]
+    public partial class descifrarRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://Services/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="base64Binary", IsNullable=true)]
         public byte[] arg0;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://Services/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string arg1;
-        
-        public sendBytesRequest() {
+        public descifrarRequest() {
         }
         
-        public sendBytesRequest(byte[] arg0, string arg1) {
-            this.arg0 = arg0;
-            this.arg1 = arg1;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="sendBytesResponse", WrapperNamespace="http://Services/", IsWrapped=true)]
-    public partial class sendBytesResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://Services/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public sendBytesResponse() {
-        }
-        
-        public sendBytesResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getFileAsBytes", WrapperNamespace="http://Services/", IsWrapped=true)]
-    public partial class getFileAsBytesRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://Services/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string arg0;
-        
-        public getFileAsBytesRequest() {
-        }
-        
-        public getFileAsBytesRequest(string arg0) {
+        public descifrarRequest(byte[] arg0) {
             this.arg0 = arg0;
         }
     }
@@ -365,17 +134,17 @@ namespace ArchivoWebService.ServicioArchivo {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getFileAsBytesResponse", WrapperNamespace="http://Services/", IsWrapped=true)]
-    public partial class getFileAsBytesResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="descifrarResponse", WrapperNamespace="http://Services/", IsWrapped=true)]
+    public partial class descifrarResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://Services/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="base64Binary", IsNullable=true)]
         public byte[] @return;
         
-        public getFileAsBytesResponse() {
+        public descifrarResponse() {
         }
         
-        public getFileAsBytesResponse(byte[] @return) {
+        public descifrarResponse(byte[] @return) {
             this.@return = @return;
         }
     }
@@ -383,17 +152,17 @@ namespace ArchivoWebService.ServicioArchivo {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getNameOfFile", WrapperNamespace="http://Services/", IsWrapped=true)]
-    public partial class getNameOfFileRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="cifrar", WrapperNamespace="http://Services/", IsWrapped=true)]
+    public partial class cifrarRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://Services/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string arg0;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="base64Binary", IsNullable=true)]
+        public byte[] arg0;
         
-        public getNameOfFileRequest() {
+        public cifrarRequest() {
         }
         
-        public getNameOfFileRequest(string arg0) {
+        public cifrarRequest(byte[] arg0) {
             this.arg0 = arg0;
         }
     }
@@ -401,17 +170,17 @@ namespace ArchivoWebService.ServicioArchivo {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getNameOfFileResponse", WrapperNamespace="http://Services/", IsWrapped=true)]
-    public partial class getNameOfFileResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="cifrarResponse", WrapperNamespace="http://Services/", IsWrapped=true)]
+    public partial class cifrarResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://Services/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string @return;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="base64Binary", IsNullable=true)]
+        public byte[] @return;
         
-        public getNameOfFileResponse() {
+        public cifrarResponse() {
         }
         
-        public getNameOfFileResponse(string @return) {
+        public cifrarResponse(byte[] @return) {
             this.@return = @return;
         }
     }
@@ -444,98 +213,6 @@ namespace ArchivoWebService.ServicioArchivo {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        ArchivoWebService.ServicioArchivo.createFileResponse ArchivoWebService.ServicioArchivo.ServicioDeArchivo.createFile(ArchivoWebService.ServicioArchivo.createFileRequest request) {
-            return base.Channel.createFile(request);
-        }
-        
-        public int createFile(string arg0) {
-            ArchivoWebService.ServicioArchivo.createFileRequest inValue = new ArchivoWebService.ServicioArchivo.createFileRequest();
-            inValue.arg0 = arg0;
-            ArchivoWebService.ServicioArchivo.createFileResponse retVal = ((ArchivoWebService.ServicioArchivo.ServicioDeArchivo)(this)).createFile(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ArchivoWebService.ServicioArchivo.createFileResponse> ArchivoWebService.ServicioArchivo.ServicioDeArchivo.createFileAsync(ArchivoWebService.ServicioArchivo.createFileRequest request) {
-            return base.Channel.createFileAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<ArchivoWebService.ServicioArchivo.createFileResponse> createFileAsync(string arg0) {
-            ArchivoWebService.ServicioArchivo.createFileRequest inValue = new ArchivoWebService.ServicioArchivo.createFileRequest();
-            inValue.arg0 = arg0;
-            return ((ArchivoWebService.ServicioArchivo.ServicioDeArchivo)(this)).createFileAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        ArchivoWebService.ServicioArchivo.getNumberOfChunksResponse ArchivoWebService.ServicioArchivo.ServicioDeArchivo.getNumberOfChunks(ArchivoWebService.ServicioArchivo.getNumberOfChunksRequest request) {
-            return base.Channel.getNumberOfChunks(request);
-        }
-        
-        public int getNumberOfChunks(string arg0) {
-            ArchivoWebService.ServicioArchivo.getNumberOfChunksRequest inValue = new ArchivoWebService.ServicioArchivo.getNumberOfChunksRequest();
-            inValue.arg0 = arg0;
-            ArchivoWebService.ServicioArchivo.getNumberOfChunksResponse retVal = ((ArchivoWebService.ServicioArchivo.ServicioDeArchivo)(this)).getNumberOfChunks(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ArchivoWebService.ServicioArchivo.getNumberOfChunksResponse> ArchivoWebService.ServicioArchivo.ServicioDeArchivo.getNumberOfChunksAsync(ArchivoWebService.ServicioArchivo.getNumberOfChunksRequest request) {
-            return base.Channel.getNumberOfChunksAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<ArchivoWebService.ServicioArchivo.getNumberOfChunksResponse> getNumberOfChunksAsync(string arg0) {
-            ArchivoWebService.ServicioArchivo.getNumberOfChunksRequest inValue = new ArchivoWebService.ServicioArchivo.getNumberOfChunksRequest();
-            inValue.arg0 = arg0;
-            return ((ArchivoWebService.ServicioArchivo.ServicioDeArchivo)(this)).getNumberOfChunksAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        ArchivoWebService.ServicioArchivo.getNChunkResponse ArchivoWebService.ServicioArchivo.ServicioDeArchivo.getNChunk(ArchivoWebService.ServicioArchivo.getNChunkRequest request) {
-            return base.Channel.getNChunk(request);
-        }
-        
-        public byte[] getNChunk(string arg0, long arg1) {
-            ArchivoWebService.ServicioArchivo.getNChunkRequest inValue = new ArchivoWebService.ServicioArchivo.getNChunkRequest();
-            inValue.arg0 = arg0;
-            inValue.arg1 = arg1;
-            ArchivoWebService.ServicioArchivo.getNChunkResponse retVal = ((ArchivoWebService.ServicioArchivo.ServicioDeArchivo)(this)).getNChunk(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ArchivoWebService.ServicioArchivo.getNChunkResponse> ArchivoWebService.ServicioArchivo.ServicioDeArchivo.getNChunkAsync(ArchivoWebService.ServicioArchivo.getNChunkRequest request) {
-            return base.Channel.getNChunkAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<ArchivoWebService.ServicioArchivo.getNChunkResponse> getNChunkAsync(string arg0, long arg1) {
-            ArchivoWebService.ServicioArchivo.getNChunkRequest inValue = new ArchivoWebService.ServicioArchivo.getNChunkRequest();
-            inValue.arg0 = arg0;
-            inValue.arg1 = arg1;
-            return ((ArchivoWebService.ServicioArchivo.ServicioDeArchivo)(this)).getNChunkAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        ArchivoWebService.ServicioArchivo.getFileAsJFileResponse ArchivoWebService.ServicioArchivo.ServicioDeArchivo.getFileAsJFile(ArchivoWebService.ServicioArchivo.getFileAsJFileRequest request) {
-            return base.Channel.getFileAsJFile(request);
-        }
-        
-        public string getFileAsJFile() {
-            ArchivoWebService.ServicioArchivo.getFileAsJFileRequest inValue = new ArchivoWebService.ServicioArchivo.getFileAsJFileRequest();
-            ArchivoWebService.ServicioArchivo.getFileAsJFileResponse retVal = ((ArchivoWebService.ServicioArchivo.ServicioDeArchivo)(this)).getFileAsJFile(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ArchivoWebService.ServicioArchivo.getFileAsJFileResponse> ArchivoWebService.ServicioArchivo.ServicioDeArchivo.getFileAsJFileAsync(ArchivoWebService.ServicioArchivo.getFileAsJFileRequest request) {
-            return base.Channel.getFileAsJFileAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<ArchivoWebService.ServicioArchivo.getFileAsJFileResponse> getFileAsJFileAsync() {
-            ArchivoWebService.ServicioArchivo.getFileAsJFileRequest inValue = new ArchivoWebService.ServicioArchivo.getFileAsJFileRequest();
-            return ((ArchivoWebService.ServicioArchivo.ServicioDeArchivo)(this)).getFileAsJFileAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         ArchivoWebService.ServicioArchivo.helloResponse ArchivoWebService.ServicioArchivo.ServicioDeArchivo.hello(ArchivoWebService.ServicioArchivo.helloRequest request) {
             return base.Channel.hello(request);
         }
@@ -559,74 +236,49 @@ namespace ArchivoWebService.ServicioArchivo {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        ArchivoWebService.ServicioArchivo.sendBytesResponse ArchivoWebService.ServicioArchivo.ServicioDeArchivo.sendBytes(ArchivoWebService.ServicioArchivo.sendBytesRequest request) {
-            return base.Channel.sendBytes(request);
+        ArchivoWebService.ServicioArchivo.descifrarResponse ArchivoWebService.ServicioArchivo.ServicioDeArchivo.descifrar(ArchivoWebService.ServicioArchivo.descifrarRequest request) {
+            return base.Channel.descifrar(request);
         }
         
-        public int sendBytes(byte[] arg0, string arg1) {
-            ArchivoWebService.ServicioArchivo.sendBytesRequest inValue = new ArchivoWebService.ServicioArchivo.sendBytesRequest();
+        public byte[] descifrar(byte[] arg0) {
+            ArchivoWebService.ServicioArchivo.descifrarRequest inValue = new ArchivoWebService.ServicioArchivo.descifrarRequest();
             inValue.arg0 = arg0;
-            inValue.arg1 = arg1;
-            ArchivoWebService.ServicioArchivo.sendBytesResponse retVal = ((ArchivoWebService.ServicioArchivo.ServicioDeArchivo)(this)).sendBytes(inValue);
+            ArchivoWebService.ServicioArchivo.descifrarResponse retVal = ((ArchivoWebService.ServicioArchivo.ServicioDeArchivo)(this)).descifrar(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ArchivoWebService.ServicioArchivo.sendBytesResponse> ArchivoWebService.ServicioArchivo.ServicioDeArchivo.sendBytesAsync(ArchivoWebService.ServicioArchivo.sendBytesRequest request) {
-            return base.Channel.sendBytesAsync(request);
+        System.Threading.Tasks.Task<ArchivoWebService.ServicioArchivo.descifrarResponse> ArchivoWebService.ServicioArchivo.ServicioDeArchivo.descifrarAsync(ArchivoWebService.ServicioArchivo.descifrarRequest request) {
+            return base.Channel.descifrarAsync(request);
         }
         
-        public System.Threading.Tasks.Task<ArchivoWebService.ServicioArchivo.sendBytesResponse> sendBytesAsync(byte[] arg0, string arg1) {
-            ArchivoWebService.ServicioArchivo.sendBytesRequest inValue = new ArchivoWebService.ServicioArchivo.sendBytesRequest();
+        public System.Threading.Tasks.Task<ArchivoWebService.ServicioArchivo.descifrarResponse> descifrarAsync(byte[] arg0) {
+            ArchivoWebService.ServicioArchivo.descifrarRequest inValue = new ArchivoWebService.ServicioArchivo.descifrarRequest();
             inValue.arg0 = arg0;
-            inValue.arg1 = arg1;
-            return ((ArchivoWebService.ServicioArchivo.ServicioDeArchivo)(this)).sendBytesAsync(inValue);
+            return ((ArchivoWebService.ServicioArchivo.ServicioDeArchivo)(this)).descifrarAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        ArchivoWebService.ServicioArchivo.getFileAsBytesResponse ArchivoWebService.ServicioArchivo.ServicioDeArchivo.getFileAsBytes(ArchivoWebService.ServicioArchivo.getFileAsBytesRequest request) {
-            return base.Channel.getFileAsBytes(request);
+        ArchivoWebService.ServicioArchivo.cifrarResponse ArchivoWebService.ServicioArchivo.ServicioDeArchivo.cifrar(ArchivoWebService.ServicioArchivo.cifrarRequest request) {
+            return base.Channel.cifrar(request);
         }
         
-        public byte[] getFileAsBytes(string arg0) {
-            ArchivoWebService.ServicioArchivo.getFileAsBytesRequest inValue = new ArchivoWebService.ServicioArchivo.getFileAsBytesRequest();
+        public byte[] cifrar(byte[] arg0) {
+            ArchivoWebService.ServicioArchivo.cifrarRequest inValue = new ArchivoWebService.ServicioArchivo.cifrarRequest();
             inValue.arg0 = arg0;
-            ArchivoWebService.ServicioArchivo.getFileAsBytesResponse retVal = ((ArchivoWebService.ServicioArchivo.ServicioDeArchivo)(this)).getFileAsBytes(inValue);
+            ArchivoWebService.ServicioArchivo.cifrarResponse retVal = ((ArchivoWebService.ServicioArchivo.ServicioDeArchivo)(this)).cifrar(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ArchivoWebService.ServicioArchivo.getFileAsBytesResponse> ArchivoWebService.ServicioArchivo.ServicioDeArchivo.getFileAsBytesAsync(ArchivoWebService.ServicioArchivo.getFileAsBytesRequest request) {
-            return base.Channel.getFileAsBytesAsync(request);
+        System.Threading.Tasks.Task<ArchivoWebService.ServicioArchivo.cifrarResponse> ArchivoWebService.ServicioArchivo.ServicioDeArchivo.cifrarAsync(ArchivoWebService.ServicioArchivo.cifrarRequest request) {
+            return base.Channel.cifrarAsync(request);
         }
         
-        public System.Threading.Tasks.Task<ArchivoWebService.ServicioArchivo.getFileAsBytesResponse> getFileAsBytesAsync(string arg0) {
-            ArchivoWebService.ServicioArchivo.getFileAsBytesRequest inValue = new ArchivoWebService.ServicioArchivo.getFileAsBytesRequest();
+        public System.Threading.Tasks.Task<ArchivoWebService.ServicioArchivo.cifrarResponse> cifrarAsync(byte[] arg0) {
+            ArchivoWebService.ServicioArchivo.cifrarRequest inValue = new ArchivoWebService.ServicioArchivo.cifrarRequest();
             inValue.arg0 = arg0;
-            return ((ArchivoWebService.ServicioArchivo.ServicioDeArchivo)(this)).getFileAsBytesAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        ArchivoWebService.ServicioArchivo.getNameOfFileResponse ArchivoWebService.ServicioArchivo.ServicioDeArchivo.getNameOfFile(ArchivoWebService.ServicioArchivo.getNameOfFileRequest request) {
-            return base.Channel.getNameOfFile(request);
-        }
-        
-        public string getNameOfFile(string arg0) {
-            ArchivoWebService.ServicioArchivo.getNameOfFileRequest inValue = new ArchivoWebService.ServicioArchivo.getNameOfFileRequest();
-            inValue.arg0 = arg0;
-            ArchivoWebService.ServicioArchivo.getNameOfFileResponse retVal = ((ArchivoWebService.ServicioArchivo.ServicioDeArchivo)(this)).getNameOfFile(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ArchivoWebService.ServicioArchivo.getNameOfFileResponse> ArchivoWebService.ServicioArchivo.ServicioDeArchivo.getNameOfFileAsync(ArchivoWebService.ServicioArchivo.getNameOfFileRequest request) {
-            return base.Channel.getNameOfFileAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<ArchivoWebService.ServicioArchivo.getNameOfFileResponse> getNameOfFileAsync(string arg0) {
-            ArchivoWebService.ServicioArchivo.getNameOfFileRequest inValue = new ArchivoWebService.ServicioArchivo.getNameOfFileRequest();
-            inValue.arg0 = arg0;
-            return ((ArchivoWebService.ServicioArchivo.ServicioDeArchivo)(this)).getNameOfFileAsync(inValue);
+            return ((ArchivoWebService.ServicioArchivo.ServicioDeArchivo)(this)).cifrarAsync(inValue);
         }
     }
 }

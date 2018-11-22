@@ -51,7 +51,7 @@ namespace ArchivoWebService
 			long numberOfChunks = (long)Math.Ceiling((double)(length / Constants.SIZE_OF_CHUNKS) / 1000000);
 			int i = 0;
 
-			serv.createFile(remotePath);
+			//serv.createFile(remotePath);
 			for (i = 0; i < numberOfChunks; i++)
 			{
 				using (FileStream fs = File.OpenRead(localPath))
@@ -149,7 +149,7 @@ namespace ArchivoWebService
 			long numberOfChunks = (long)Math.Ceiling((double)(length / Constants.SIZE_OF_CHUNKS) / 1000000);
 			long i = 0;
 			byte[] bytesRead = new byte[1000000 * Constants.SIZE_OF_CHUNKS];
-			serv.createFile(remotePath);
+			//serv.createFile(remotePath);
 			for (i = 0; i < numberOfChunks; i++)
 			{
 				using (FileStream fs = File.OpenRead(localPath))

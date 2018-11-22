@@ -5,144 +5,45 @@
       <xsd:import schemaLocation="http://localhost:8090/ServicioArchivo/ServicioDeArchivo?xsd=1" namespace="http://Services/" />
     </xsd:schema>
   </types>
-  <message name="createFile">
-    <part name="parameters" element="tns:createFile" />
-  </message>
-  <message name="createFileResponse">
-    <part name="parameters" element="tns:createFileResponse" />
-  </message>
-  <message name="IOException">
-    <part name="fault" element="tns:IOException" />
-  </message>
-  <message name="getNumberOfChunks">
-    <part name="parameters" element="tns:getNumberOfChunks" />
-  </message>
-  <message name="getNumberOfChunksResponse">
-    <part name="parameters" element="tns:getNumberOfChunksResponse" />
-  </message>
-  <message name="getNChunk">
-    <part name="parameters" element="tns:getNChunk" />
-  </message>
-  <message name="getNChunkResponse">
-    <part name="parameters" element="tns:getNChunkResponse" />
-  </message>
-  <message name="getFileAsJFile">
-    <part name="parameters" element="tns:getFileAsJFile" />
-  </message>
-  <message name="getFileAsJFileResponse">
-    <part name="parameters" element="tns:getFileAsJFileResponse" />
-  </message>
   <message name="hello">
     <part name="parameters" element="tns:hello" />
   </message>
   <message name="helloResponse">
     <part name="parameters" element="tns:helloResponse" />
   </message>
-  <message name="sendBytes">
-    <part name="parameters" element="tns:sendBytes" />
+  <message name="descifrar">
+    <part name="parameters" element="tns:descifrar" />
   </message>
-  <message name="sendBytesResponse">
-    <part name="parameters" element="tns:sendBytesResponse" />
+  <message name="descifrarResponse">
+    <part name="parameters" element="tns:descifrarResponse" />
   </message>
-  <message name="getFileAsBytes">
-    <part name="parameters" element="tns:getFileAsBytes" />
+  <message name="IOException">
+    <part name="fault" element="tns:IOException" />
   </message>
-  <message name="getFileAsBytesResponse">
-    <part name="parameters" element="tns:getFileAsBytesResponse" />
+  <message name="cifrar">
+    <part name="parameters" element="tns:cifrar" />
   </message>
-  <message name="getNameOfFile">
-    <part name="parameters" element="tns:getNameOfFile" />
-  </message>
-  <message name="getNameOfFileResponse">
-    <part name="parameters" element="tns:getNameOfFileResponse" />
+  <message name="cifrarResponse">
+    <part name="parameters" element="tns:cifrarResponse" />
   </message>
   <portType name="ServicioDeArchivo">
-    <operation name="createFile">
-      <input wsam:Action="http://Services/ServicioDeArchivo/createFileRequest" message="tns:createFile" />
-      <output wsam:Action="http://Services/ServicioDeArchivo/createFileResponse" message="tns:createFileResponse" />
-      <fault wsam:Action="http://Services/ServicioDeArchivo/createFile/Fault/IOException" name="IOException" message="tns:IOException" />
-    </operation>
-    <operation name="getNumberOfChunks">
-      <input wsam:Action="http://Services/ServicioDeArchivo/getNumberOfChunksRequest" message="tns:getNumberOfChunks" />
-      <output wsam:Action="http://Services/ServicioDeArchivo/getNumberOfChunksResponse" message="tns:getNumberOfChunksResponse" />
-      <fault wsam:Action="http://Services/ServicioDeArchivo/getNumberOfChunks/Fault/IOException" name="IOException" message="tns:IOException" />
-    </operation>
-    <operation name="getNChunk">
-      <input wsam:Action="http://Services/ServicioDeArchivo/getNChunkRequest" message="tns:getNChunk" />
-      <output wsam:Action="http://Services/ServicioDeArchivo/getNChunkResponse" message="tns:getNChunkResponse" />
-      <fault wsam:Action="http://Services/ServicioDeArchivo/getNChunk/Fault/IOException" name="IOException" message="tns:IOException" />
-    </operation>
-    <operation name="getFileAsJFile">
-      <input wsam:Action="http://Services/ServicioDeArchivo/getFileAsJFileRequest" message="tns:getFileAsJFile" />
-      <output wsam:Action="http://Services/ServicioDeArchivo/getFileAsJFileResponse" message="tns:getFileAsJFileResponse" />
-    </operation>
     <operation name="hello">
       <input wsam:Action="http://Services/ServicioDeArchivo/helloRequest" message="tns:hello" />
       <output wsam:Action="http://Services/ServicioDeArchivo/helloResponse" message="tns:helloResponse" />
     </operation>
-    <operation name="sendBytes">
-      <input wsam:Action="http://Services/ServicioDeArchivo/sendBytesRequest" message="tns:sendBytes" />
-      <output wsam:Action="http://Services/ServicioDeArchivo/sendBytesResponse" message="tns:sendBytesResponse" />
-      <fault wsam:Action="http://Services/ServicioDeArchivo/sendBytes/Fault/IOException" name="IOException" message="tns:IOException" />
+    <operation name="descifrar">
+      <input wsam:Action="http://Services/ServicioDeArchivo/descifrarRequest" message="tns:descifrar" />
+      <output wsam:Action="http://Services/ServicioDeArchivo/descifrarResponse" message="tns:descifrarResponse" />
+      <fault wsam:Action="http://Services/ServicioDeArchivo/descifrar/Fault/IOException" name="IOException" message="tns:IOException" />
     </operation>
-    <operation name="getFileAsBytes">
-      <input wsam:Action="http://Services/ServicioDeArchivo/getFileAsBytesRequest" message="tns:getFileAsBytes" />
-      <output wsam:Action="http://Services/ServicioDeArchivo/getFileAsBytesResponse" message="tns:getFileAsBytesResponse" />
-      <fault wsam:Action="http://Services/ServicioDeArchivo/getFileAsBytes/Fault/IOException" name="IOException" message="tns:IOException" />
-    </operation>
-    <operation name="getNameOfFile">
-      <input wsam:Action="http://Services/ServicioDeArchivo/getNameOfFileRequest" message="tns:getNameOfFile" />
-      <output wsam:Action="http://Services/ServicioDeArchivo/getNameOfFileResponse" message="tns:getNameOfFileResponse" />
-      <fault wsam:Action="http://Services/ServicioDeArchivo/getNameOfFile/Fault/IOException" name="IOException" message="tns:IOException" />
+    <operation name="cifrar">
+      <input wsam:Action="http://Services/ServicioDeArchivo/cifrarRequest" message="tns:cifrar" />
+      <output wsam:Action="http://Services/ServicioDeArchivo/cifrarResponse" message="tns:cifrarResponse" />
+      <fault wsam:Action="http://Services/ServicioDeArchivo/cifrar/Fault/IOException" name="IOException" message="tns:IOException" />
     </operation>
   </portType>
   <binding name="ServicioDeArchivoPortBinding" type="tns:ServicioDeArchivo">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="createFile">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-      <fault name="IOException">
-        <soap:fault use="literal" name="IOException" namespace="" />
-      </fault>
-    </operation>
-    <operation name="getNumberOfChunks">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-      <fault name="IOException">
-        <soap:fault use="literal" name="IOException" namespace="" />
-      </fault>
-    </operation>
-    <operation name="getNChunk">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-      <fault name="IOException">
-        <soap:fault use="literal" name="IOException" namespace="" />
-      </fault>
-    </operation>
-    <operation name="getFileAsJFile">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
     <operation name="hello">
       <soap:operation soapAction="" />
       <input>
@@ -152,7 +53,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="sendBytes">
+    <operation name="descifrar">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -164,19 +65,7 @@
         <soap:fault use="literal" name="IOException" namespace="" />
       </fault>
     </operation>
-    <operation name="getFileAsBytes">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-      <fault name="IOException">
-        <soap:fault use="literal" name="IOException" namespace="" />
-      </fault>
-    </operation>
-    <operation name="getNameOfFile">
+    <operation name="cifrar">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
